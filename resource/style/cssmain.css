@@ -1,0 +1,633 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 Aug, 2017, 9:07:12 AM
+    Author     : Saurabh-The Rock
+*/
+
+/* Page */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri;
+}
+div div div img:hover
+{border: 1px solid   #999393; }
+
+/*Scroll-down top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* heading Banner*/
+#banner {
+        width: 1300px;
+	margin:0 auto;
+        height:250px;
+}
+
+.logo{
+    margin: 0px 0px 00px 1050px;
+    height:100px;
+    width: 180px;
+    
+}
+
+#page {
+	width: 1200px;
+	margin:0 auto;
+	padding: 10px 0;
+        height:auto;
+}
+
+#menuBar{
+        width: 1300px;
+	padding:0px 0;
+        margin: 0px auto;
+        height:40px;
+       // border: 1px solid black;
+        background: -webkit-linear-gradient(yellow,red,orange);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1000;
+        position:relative;
+}
+#menuBar ul{
+        list-style:none;
+}
+#menuBar ul li{
+        background: -webkit-linear-gradient(yellow,red,orange);
+        width:170px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        float:left;
+        color: white;
+        font-size:16px;
+        font-family: Calibri;
+        position: relative;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        //border: 1px whitesmoke dotted; 
+       
+}
+#menuBar ul ul li{
+   // border: 1px  #ccccff ;
+    height: 30px;
+    line-height: 30px;
+}
+#menuBar ul li:hover{
+    background-color: #9999ff ; 
+}
+#menuBar ul li ul li:hover{
+    background-color: #999999;  
+}
+    
+#menuBar ul ul{
+        display: none;
+}
+#menuBar ul li:hover > ul{
+        display: block;
+}
+#menuBar ul ul ul{
+        margin-left:150px;        
+        top:0px;
+        position: absolute;
+}
+
+/* Content */
+#content {
+	float: left;
+	width: 1160px;
+        height:auto;
+        padding:0px  20px 0 20px;
+		 background: -webkit-linear-gradient(yellow,white,yellow);
+}
+/*Heading font formatting*/
+h2{
+    font-size:  25px;  font-family:Times New Roman;
+    background: -webkit-linear-gradient(red,black,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+h3{
+    font-size:  25px;  font-family:Times New Roman;
+    background: -webkit-linear-gradient(yellow,black,Red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+h4{
+    font-size:  23px;  font-family:Times New Roman;
+    background: -webkit-linear-gradient(red,green,Red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+h5{
+    font-size:  20px;  font-family: Georgia;
+    background: -webkit-linear-gradient(red,pink,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+/*for zoom in image*
+.frame {
+  height: 200px;
+  width: 220px;
+  overflow: hidden;
+}
+.zoomin img {
+  height: 200px;
+  width: 220px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+.zoomin img:hover {
+  width: 250px;
+  height: 250px;
+}*/
+
+.description{
+    font-family:Lucida Calligraphy;   
+    font-size: 14pt;
+    text-align: justify;
+    color: black;
+	
+}
+
+table td tr{
+    width:300px;
+}
+
+
+/* ---- Some Resets ---- */
+
+table, caption, td, tr, th {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	}
+
+/* ---- Paragraphs ---- */
+
+
+/* ---- Table ---- */
+
+table {
+	border-collapse:separate;
+        border-width: 3px;
+        border-color:#0E76A8;
+	margin-bottom:15px;
+	width:70%;
+	}
+	
+	caption {
+		text-align:left;
+		font-size:15px;
+		padding-bottom:10px;
+		}
+	
+	table td
+	 {
+		padding:5px;
+		border:1px solid #fff;
+		border-width:0 1px 1px 0;
+                color: #06213F;
+		}
+		
+	thead th {
+		background:skyblue;
+                text-align:center;
+                font-size: 15px;
+                color: #000;
+                padding:8px;
+		border:1px solid #fff;
+		border-width:0 1px 1px 0;
+		}
+			
+		thead th[colspan],
+		thead th[rowspan] {
+			background:#66a9bd;
+			}
+		
+	tbody th,
+	tfoot th {
+		text-align:left;
+		background: #66a9bd;
+                color:#FFFFFF;
+                font-size: 25px;
+                padding-left: 20px;
+		}
+		
+	tbody td,
+	tfoot td {
+		text-align:center;
+		background:#d5eaf0;
+		}
+		
+	tfoot th {
+		background:#b0cc7f;
+		}
+		
+	tfoot td {
+		background:#d7e1c5;
+		font-weight:bold;
+		}
+			
+	tbody tr.odd td { 
+		background:#bcd9e2;
+                
+		}
+/* Sidebar */
+#sidebar2 {
+	float: right;
+	width: 200px;
+	//margin:0px  10px 0 0px;
+        padding-left: 20px;
+        height: auto;
+}
+#sidebar1 {
+	float: left;
+	width: 220px;
+       // margin: 0px 10px 0 10px;
+        padding-left: 10px;  
+        height: auto;
+}
+#footer{
+        width: 1300px;
+	height:450px;	
+       // border: 1px black solid;
+        //margin-top:auto;
+        margin:10px auto auto auto ;
+        background-color:  #666666;
+}
+/*Right sidebar scroll menu*/
+.vertical-menu {
+    width: 220px;
+    height: 250px;
+    overflow-x: auto;
+    
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/*Right sidebar Vertical Drop-Dwon Navigation Bar*/
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+.main-nav{
+    width: 220px;
+    background: #9999ff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+.main-nav  a{
+    color: #fff;
+    display: block;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px dotted gray;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover{background: rgba(121,165,162,1.00);}
+
+.main-nav ul ul{display: none;}
+
+.main-nav ul li:hover ul{
+    display: block;
+    background-color: #660063;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+.main-nav ul ul a:before {
+    content: '\203A';
+    
+}
+.main-nav .sub-arrow:after{
+    content: '\203A';
+    float: right;
+    margin-right: 20px;
+    transform:rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+.main-nav li:hover .sub-arrow:after{
+    content: '\2039';
+    
+}
+
+/* Left Sidebar search Filter */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+#myInput {
+    border-box: box-sizing;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 570px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 220px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Calibri;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+/* The Image Box */
+div.img {
+    border: 1px solid #ccc;
+    width: 215px;
+    height: 200px;
+}
+
+div.img:hover {
+    border: 0px    #999393;
+}
+
+/* The Image */
+div.img img {
+    width: 215px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/* Description of Image 
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}*/
+
+/* Add Responsiveness */
+.responsive {
+    padding: 0 6px;
+    float: right;
+    //width: 24.99999%;
+    width: 215px; 
+    height:200px; 
+    border: 0px solid red;
+    float: left;
+    padding-left: 10px; 
+    padding-top: 10px;  
+   // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Columns */
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+/* Clear Floats */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//-------------------------------------------------------------------------------------------------------------------
+//-----Statr footer Section------------------------------------------------------------------------------------------
+
+
+footer{color:#999;
+margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;display:block;
+}
+
+
+footer #topfooter {
+	height: 110px;
+	width: 100%;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #0072c6;
+	background:-moz-linear-gradient(#484848,#333333);
+	background:-webkit-linear-gradient(#484848,#333333);
+	background:-o-linear-gradient(#484848,#333333);
+	background:-ms-linear-gradient(#484848,#333333);
+	background:linear-gradient(#484848,#333333);
+	margin-top:20px;
+	padding-top:10px;
+}
+footer #topfooter #footer_logofooter {
+	text-indent:-22222px;
+	/*background-image: url(images/NIELIT logo.png);*/
+	background-repeat: no-repeat;
+	margin-top:20px;
+	height: 47px;
+}
+#social_iconsfooter ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+footer h2 {font-size:16px; font-weight:bold; text-transform:uppercase; height:30px;border-bottom:1px solid #333333;}
+footer ul {padding:0;border-top:1px solid #555555;padding-top:20px;}
+footer p {padding:0;border-top:1px solid #555555;padding-top:15px;font-size:14px;}
+footer #bottomfooter{
+	height: 47px;
+	width: 100%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgba(255,255,255,0.18);
+	background:-moz-linear-gradient(#484848,#333333);
+	background:-webkit-linear-gradient(#484848,#333333);
+	background:-o-linear-gradient(#484848,#333333);
+	background:-ms-linear-gradient(#484848,#333333);
+	background:linear-gradient(#484848,#333333);
+	padding-top:20px;
+        color:  #ddd;
+}
+#contentfooter #social_iconsfooter h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: rgba(0,0,0,1);
+	margin-bottom:7px;
+}
+.span-8 {width:310px;
+float:left;margin-right:10px;
+color:#ddd; 
+}
+.containerfooter {width:950px;margin:0 auto;}
+span{
+    margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;
+}
+.right {float:right !important;}
+
+
+//-----End footer Section--------------------------------------------------------------------------------------------
+
+.developer{
+    font-size: 26pt;
+    color: #f1f1f1;
+    font-family: DokChampa;
+    padding-left: 20px;
+}
+//-----1234
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
